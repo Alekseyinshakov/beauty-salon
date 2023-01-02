@@ -1,0 +1,136 @@
+@import "reset.scss";
+@import "fonts.scss";
+@import "header.scss";
+
+@keyframes pulse {
+   0%{
+      transform: scale(100%);
+   }
+   10%{
+      transform: scale(130%);
+   }
+   20%{
+      transform: scale(100%);
+   }
+   30%{
+      transform: scale(130%);
+   }
+   40%{
+      transform: scale(100%);
+   }
+   100%{
+      transform: scale(100%);
+   }
+}
+
+
+
+html{
+   overflow-x: hidden;
+}
+
+body {
+   font-family: clearsans;
+   font-size: 18px;
+   line-height: 1.3;
+   color: #fff;
+   background-color: #111111;
+   overflow-x: hidden;
+   position:relative;
+}
+
+a{
+   color: #fff;
+}
+
+.container {
+   max-width: 1336px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.top {
+   background-image: url(../img/top-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-position-x: center;
+   background-position-y: top;  
+   position: relative;
+   &__inner{
+      display: flex;
+      align-items: center;
+      height: 100vh;
+   }
+   
+   &-title {
+      
+      font-weight: 700;
+      font-size: 67px;
+      line-height: 120%;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      // background-color: rgba($color: #000000, $alpha: 0.5);
+      padding: 25px 0;
+      border-radius: 25px;
+      position: relative;
+      z-index: 3;
+      color: #000;
+      opacity: 1;
+      transform: scale(1);
+      transition: all 2s;
+      // transition-delay: 0.5s;
+      &-hide{
+         opacity: 0.1;
+         transform: scale(0.1);
+      }
+      &::after{
+         z-index: -3;
+         position: absolute;
+         content: "";
+         height: 100%;
+         border-radius: 15px;
+         background-color: rgba($color: #fff, $alpha: 0.65);
+         bottom: 0;
+         right: 0;
+         left: 0;
+      }
+   }
+   &-scroll-btn {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 700;
+      img {
+         margin-right: 20px;
+         animation: pulse  2s infinite ease-in-out;
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "adaptive.scss";
