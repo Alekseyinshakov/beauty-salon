@@ -1,22 +1,9 @@
 .services {
-   padding-top: 120px;
+   margin-top: 60px;
+   padding-top: 60px;
    &__inner {}
    &__description {}
-   &__quaotes {
-      text-align: center;
-      margin-bottom: 60px;
-   }
-   &__text {
-      max-width: 850px;
-      letter-spacing: 0.08em;
-      margin: 0 auto;
-      text-align: center;
-      font-weight: 300;
-      margin-bottom: 95px;
-      p{
-         margin-bottom: 12px;
-      }
-   }
+
    &__items {
       display: flex;
       flex-wrap: wrap;
@@ -26,6 +13,24 @@
    &__item {
       // width: 31%;
       margin-bottom: 80px;
+      transform: scale(20%);
+      opacity: 0;
+      transition: all 1s;
+      &:nth-child(2){
+         transition-delay: 0.2s;
+      }
+      &:nth-child(3){
+         transition-delay: 0.4s;
+      }
+      &:nth-child(4){
+         transition-delay: 0.6s;
+      }
+      &:nth-child(5){
+         transition-delay: 0.8s;
+      }
+      &:nth-child(6){
+         transition-delay: 1s;
+      }
    }
    &__item-img-box {
       position: relative;
@@ -55,6 +60,30 @@
       font-weight: 300;
       margin-top: 1em;
    }
+
+   &.animated{
+      .services__item{
+         transform: scale(100%);
+         opacity: 1;
+      }
+   }
  }
 
  
+ .brands{
+      &__quaotes {
+      text-align: center;
+      margin-bottom: 60px;
+   }
+   &__text {
+      max-width: 850px;
+      letter-spacing: 0.08em;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 95px;
+      p{
+         margin-bottom: 12px;
+      }
+   }
+ }
