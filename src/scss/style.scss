@@ -2,31 +2,31 @@
 @import "fonts.scss";
 @import "header.scss";
 @import "services.scss";
+@import "our-work.scss";
+@import "footer.scss";
 
 @keyframes pulse {
-   0%{
+   0% {
       transform: scale(100%);
    }
-   10%{
+   10% {
       transform: scale(130%);
    }
-   20%{
+   20% {
       transform: scale(100%);
    }
-   30%{
+   30% {
       transform: scale(130%);
    }
-   40%{
+   40% {
       transform: scale(100%);
    }
-   100%{
+   100% {
       transform: scale(100%);
    }
 }
 
-
-
-html{
+html {
    overflow-x: hidden;
    scroll-behavior: smooth;
 }
@@ -39,10 +39,10 @@ body {
    color: #fff;
    background-color: #111111;
    overflow-x: hidden;
-   position:relative;
+   position: relative;
 }
 
-a{
+a {
    color: #fff;
 }
 
@@ -52,22 +52,31 @@ a{
    padding: 0 20px;
 }
 
+.title {
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 120%;
+   /* identical to box height, or 58px */
+
+   text-align: center;
+   margin-bottom: 80px;
+}
+
 .top {
    background-image: url(../img/top-bg.jpg);
    background-repeat: no-repeat;
    background-size: auto;
    background-position-x: center;
-   background-position-y: top;  
+   background-position-y: top;
    position: relative;
-   
-   &__inner{
+
+   &__inner {
       display: flex;
       align-items: center;
       height: 100vh;
    }
-   
+
    &-title {
-      
       font-weight: 700;
       font-size: 67px;
       line-height: 120%;
@@ -86,11 +95,11 @@ a{
       transform: scale(1);
       transition: all 2s;
       // transition-delay: 0.5s;
-      &-hide{
+      &-hide {
          opacity: 0.1;
          transform: scale(0.1);
       }
-      &::after{
+      &::after {
          z-index: -3;
          position: absolute;
          content: "";
@@ -113,28 +122,9 @@ a{
       font-weight: 700;
       img {
          margin-right: 20px;
-         animation: pulse  2s infinite ease-in-out;
+         animation: pulse 2s infinite ease-in-out;
       }
    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import "adaptive.scss";

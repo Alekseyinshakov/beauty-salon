@@ -25,7 +25,7 @@ var Visible = function (target) {
     targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
     // Если элемент полностью видно, то запускаем следующий код
    //  console.clear();
-    console.log('Вы видите элемент :)');
+    
 
    document.querySelector('.services').classList.add('animated')
 
