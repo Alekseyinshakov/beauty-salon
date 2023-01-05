@@ -3,13 +3,18 @@ export function topScroll() {
    const $services = document.querySelector('.services');
 
    // При клике на кнопку
-   $scrollButton.addEventListener('click', e => {
-      // Прокрутим страницу к форме 
-      $services.scrollIntoView({
-         block: 'start', // к ближайшей границе экрана
-         behavior: 'smooth', // и плавно 
-      });
-   });
 
-   
+   if ($scrollButton && $services) {
+      $scrollButton.addEventListener('click', e => {
+         // Прокрутим страницу к форме 
+         $services.scrollIntoView({
+            block: 'start', // к ближайшей границе экрана
+            behavior: 'smooth', // и плавно 
+         });
+      });
+   }
+
+
+
+
 }

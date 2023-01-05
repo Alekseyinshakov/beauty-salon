@@ -2,7 +2,12 @@ export function headerAnimate() {
    // Animation title and header
    document.querySelector('.header').classList.add('header-animate');
    document.querySelector('.header-adaptive').classList.add('header-adaptive-animate');
-   document.querySelector('.top-title').classList.remove('top-title-hide');
+
+   const mainTitle = document.querySelector('.top-title');
+
+   if (mainTitle) {
+      mainTitle.classList.remove('top-title-hide');
+   }
 
 
 

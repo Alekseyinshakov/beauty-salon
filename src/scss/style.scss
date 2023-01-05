@@ -4,6 +4,7 @@
 @import "services.scss";
 @import "our-work.scss";
 @import "footer.scss";
+@import "our-team.scss";
 
 @keyframes pulse {
    0% {
@@ -60,6 +61,16 @@ a {
 
    text-align: center;
    margin-bottom: 80px;
+}
+
+.body__inner{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.main{
+   flex-grow: 1;
 }
 
 .top {

@@ -14,14 +14,19 @@ window.onload = function () {
    headerAnimate()
    topScroll()
    servicesScroll()
-   var mixer = mixitup('.our-work__container', {
-      load: {
-         filter: '.category-b'
-     },
-     animation: {
-      duration: 1000
-  }
-   });
+
+   if (document.querySelector('.our-work__container')) {
+      var mixer = mixitup('.our-work__container', {
+         load: {
+            filter: '.category-b'
+         },
+         animation: {
+            duration: 1000
+         }
+      });
+   }
+
+
 
 };
 

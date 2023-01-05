@@ -1,4 +1,7 @@
 @media(max-width: 950px){
+   .our-team__name{
+      font-size: 21px;
+   }
    .footer__inner{
       padding: 40px 10px;
    }
@@ -48,6 +51,12 @@
 
 
 @media(max-width: 750px){
+   .our-team{
+      padding-top: 120px;
+   }
+   .our-team__grid{
+      grid-template-columns: 1fr 1fr;
+   }
    .title{
       margin-bottom: 30px;
    }
@@ -78,6 +87,23 @@
 }
 
 @media(max-width: 470px){
+   .our-team__name{
+      margin-bottom: 2px;
+      text-align: center;
+   }
+   .our-team__job{
+      text-align: center;
+   }
+   .our-team__img-container{
+      margin-bottom: 4px;
+      
+   }
+   .our-team__grid{
+      display: block;
+   }
+   .our-team__item{
+      padding-bottom: 40px;
+   }
    .title{
       font-size: 38px;
    }
