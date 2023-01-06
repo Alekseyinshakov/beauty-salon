@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>Delote-Beauty</title>
-</head>
+@@include('html/head.html',{
+"title":"Delote-Beauty"
+})
 
 <body>
-  
+  <!-- @@include('html/header.html') -->
 
   <div class="body__inner">
 
@@ -61,7 +57,7 @@
             <nav class="header__menu">
               <ul class="header__menu-list">
                 <li><a href="index.html">Главная</a></li>
-                <li><a class="active" href="our-team.html">Мастера</a></li>
+                <li><a href="our-team.html">Мастера</a></li>
                 <li><a href="price.html">Цены</a></li>
               </ul>
             </nav>
@@ -71,7 +67,7 @@
             <nav class="header__menu">
               <ul class="header__menu-list">
                 <li><a href="sales.html">Акции</a></li>
-                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a class="active" href="reviews.html">Отзывы</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
               </ul>
             </nav>
@@ -87,10 +83,10 @@
       <div class="header-adaptive">
         <ul class="header-adaptive__menu hide">
           <li><a href="index.html">Главная</a></li>
-          <li><a class="active" href="our-team.html">Мастера</a></li>
+          <li><a href="our-team.html">Мастера</a></li>
           <li><a href="price.html">Цены</a></li>
           <li><a href="sales.html">Акции</a></li>
-          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a class="active" href="reviews.html">Отзывы</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <div class="container">
@@ -182,33 +178,7 @@
 
 
     <div class="footer__flex">
-      <footer class="footer">
-   <div class="container">
-      <div class="footer__inner">
-         <div class="footer__col">
-            <img src="img/footer-logo.png" alt="" class="footer__logo">
-         </div>
-         <div class="footer__col">
-            <div class="footer__title">Контакты</div>
-            <p><a href="tel:+89876543210">+7 (812) 123-45-67</a></p>
-            <p><a href="tel:+89876543210">+7 (911) 123-45-67</a></p>
-            <p>Новоостровский <br>
-               проспект, дом 36 лит. С</p>
-         </div>
-         <div class="footer__col">
-            <div class="footer__title">Режим работы</div>
-            <p>C 10:00 до 21:00 (Пн-Пт)</p>
-            <p>С 11:00 до 20:00 (Сб-Вс)</p>
-         </div>
-         <div class="footer__col">
-            <div class="footer__title">Мы в Instagram</div>
-            <a href=""><img src="img/footer-insta.png" alt=""></a>
-            
-         </div>
-      </div>
-      <div class="footer__copy">Copyright © 2017 - 2022</div>
-   </div>
-</footer>
+      @@include('html/footer.html')
     </div>
 
   </div>
