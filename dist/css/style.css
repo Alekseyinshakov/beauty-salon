@@ -435,6 +435,10 @@ legend {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
   padding: 10px;
+  opacity: 0;
+}
+.our-team__grid.show {
+  opacity: 1;
 }
 .our-team__item {
   padding-bottom: 15px;
