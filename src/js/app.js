@@ -17,6 +17,7 @@ window.onload = function () {
    servicesScroll()
    ourTeamAnimate()
    if (document.querySelector('.our-work__container')) {
+      
       var mixer = mixitup('.our-work__container', {
          load: {
             filter: '.category-b'
